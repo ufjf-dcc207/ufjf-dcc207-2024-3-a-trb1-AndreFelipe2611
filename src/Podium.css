@@ -1,0 +1,66 @@
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.place {
+    width: 150px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.place span {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffd700;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.first {
+    height: 200px;
+    width: 150px;
+    background: #ffd700;
+    color: #000;
+    border-radius: 10px;
+}
+
+.second {
+    height: 150px;
+    width: 150px;
+    background: #c0c0c0;
+    color: #000;
+    border-radius: 10px;
+}
+
+.third {
+    height: 120px;
+    width: 150px;
+    background: #cd7f32;
+    color: #000;
+    border-radius: 10px;
+}
+
+.place img {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.place h2 {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
