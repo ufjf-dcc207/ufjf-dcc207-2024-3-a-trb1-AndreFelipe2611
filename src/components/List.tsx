@@ -1,12 +1,10 @@
 import "./List.css";
 import Rank from "./Rank";
+import { isol } from '../isol';
 
-interface ListProps {
-  RANK: [number, string, string, string, string][]; 
-  IMAGES: { [key: string]: string };
-}
+function List() {
+  const { RANK, IMAGES } = isol;
 
-function List({ RANK, IMAGES }: ListProps) {
   return (
     <>
       <h1>Top 10 Melhores Jogos 2024</h1>
@@ -14,7 +12,7 @@ function List({ RANK, IMAGES }: ListProps) {
         <Rank
           key={position}
           position={position}
-          image={IMAGES[image]}
+          image={IMAGES[image]} // Agora funciona com índice dinâmico
           text={text}
           title={title}
           name={name}
