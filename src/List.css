@@ -1,0 +1,38 @@
+/* Remove estilo padrão de lista */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  
+  li strong {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+ 
+  li span {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+ 
+  
