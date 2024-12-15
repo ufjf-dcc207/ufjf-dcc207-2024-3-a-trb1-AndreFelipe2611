@@ -1,19 +1,27 @@
 import "./List.css";
+import Rank from "./Rank";
 
 interface ListProps {
-  top: number;
-  image: string;
-  text: string;
+  RANK: [number, string, string, string, string][]; 
+  IMAGES: { [key: string]: string };
 }
 
-export default function List({ top, image, text }: ListProps) {
-  const topList = top === 4 ? "fourth" : top === 5 ? "five" : "other";
-
+function List({ RANK, IMAGES }: ListProps) {
   return (
-    <li className={topList}>
-      <strong>{top}</strong>
-      <img src={image} alt={text} />
-      <span>{text}</span>
-    </li>
+    <>
+      <h1>Top 10 Melhores Jogos 2024</h1>
+      {RANK.map(([position, image, name, title, text]) => (
+        <Rank
+          key={position}
+          position={position}
+          image={IMAGES[image]}
+          text={text}
+          title={title}
+          name={name}
+        />
+      ))}
+    </>
   );
 }
+
+export default List;

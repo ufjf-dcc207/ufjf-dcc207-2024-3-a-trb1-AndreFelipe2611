@@ -1,23 +1,23 @@
-import "./App.css";
-import Podium from "./Podium";
-import List from "./List";
+import List from './components/List';
+
+
+const rank: [number, string, string, string, string][] = [
+  [1, 'game1', 'GamOne', 'Best ', 'A '],
+  [2, 'game2', 'GameTwo', 'Top ', 'A '],
+  // 
+];
+
+const images = {
+  game1: 'path/to/game1-image.jpg',
+  game2: 'path/to/game2-image.jpg',
+ 
+};
 
 function App() {
   return (
-    <>
-      <section className="podium">
-        <Podium position={2} image="" text="" title="Game A" />
-        <Podium position={1} image="" text="Game B" title="Game B" />
-        <Podium position={3} image="" text="Game C" title="Game C" />
-      </section>
-
-      <ul className="list">
-        <List top={4} image="" text="Game D" />
-        <List top={5} image="" text="Game E" />
-        <List top={6} image="" text="Game F" />
-        <List top={7}image="" text="Game F" />
-      </ul>
-    </>
+    <div className="App">
+      <List RANK={rank} IMAGES={images} />
+    </div>
   );
 }
 
