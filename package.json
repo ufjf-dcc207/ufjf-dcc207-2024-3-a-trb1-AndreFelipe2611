@@ -2,6 +2,8 @@
   "name": "atvc01",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://AndreFelipe2611.github.io/ufjf-dcc207-2024-3-a-trb1-AndreFelipe2611,
+}
   "type": "module",
   "scripts": {
     "dev": "vite",
