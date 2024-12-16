@@ -11,9 +11,11 @@ ul {
     display: block;
 }
 
-h1{
-    font-size: 2.5rem;
-      font-weight: 700;
+h1 {
+    color: #fff;
+    font-size: 2.5rem; 
+    line-height: 1.2; 
+    margin: 0.5rem 0;
+    text-align: center; 
   }
-  
  
