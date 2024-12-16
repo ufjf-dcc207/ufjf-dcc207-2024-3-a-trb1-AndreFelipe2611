@@ -1,11 +1,11 @@
-// App.tsx
 import List from './components/List';
+import { isol } from './isol'; 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <List />
+      <List RANK={isol.RANK} IMAGES={isol.IMAGES} />
     </div>
   );
 }

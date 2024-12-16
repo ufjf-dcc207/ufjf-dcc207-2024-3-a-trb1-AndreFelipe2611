@@ -1,32 +1,41 @@
 import "./Rank.css";
 
 interface RankProps {
-  position: number; 
-  image: string; 
-  text: string; 
-  title?: string; 
-  name?: string; 
+  position: number;
+  image: string;
+  text: string;
+  title?: string;
+  name?: string;
 }
 
-export default function Rank({ position, image, text, title, name }: RankProps) {
-  
-  const className =
-    position === 1
-      ? "first"
-      : position === 2
-      ? "second"
-      : position === 3
-      ? "third"
-      : position >= 4 && position <= 10
-      ? "other"
-      : "";
-
+export default function Rank({
+  position,
+  image,
+  text,
+  title,
+  name,
+}: RankProps) {
   return (
-    <div className={className}>
-      <span>{position}</span>
-      <img src={image} alt={text} />
-      {name && <h2>{name}</h2>}
-      {title && <p>{title}</p>}
-    </div>
+    <>
+      {position <= 3 ? (
+        <div
+          className={
+            position === 1 ? "first" : position === 2 ? "second" : "third"
+          }
+        >
+          <span>{position}</span>
+          <img src={image} alt={text} />
+          {name && <h4>{name}</h4>}
+          {title && <p>{title}</p>}
+        </div>
+      ) : (
+        <div className="other">
+          <strong>{position}</strong>
+          <img className="img2" src={image} alt={text} />
+          {name && <h4>{name}</h4>}
+          {title && <p>{title}</p>}
+        </div>
+      )}
+    </>
   );
 }

@@ -1,98 +1,74 @@
 /* Remove estilo padrão de lista */
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .className{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 40px 0;
-    gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 40px 0;
+  gap: 20px;
+}
 
+h4 {
+  color: #fff;
+}
 
-/*.
+.other {
+  flex-basis: 100%;
+  flex-grow: 0;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #b9b6b6;
+  max-width: 700px;
+}
 
-.place {
-    width: 150px;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
+span {
+  display: none;
+}
+
+img {
+  width: 50%;
+  height: 45%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.img2 {
+  width: 10%;
+}
+
+strong {
+  display: none;
 }
 
 .first {
-    height: 200px;
-    width: 150px;
-    background: #0b83e6;
-    color: #000;
-    border-radius: 10px;
-    box-shadow: 0 12px 40px #0b83e6; 
+  height: 200px;
+  width: 170px;
+  background: #0b83e6;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px #0b83e6;
 }
 
 .second {
-    height: 150px;
-    width: 150px;
-    background: #d4e20c;
-    color: #000;
-    border-radius: 10px;
-    box-shadow: 0 12px 40px #d4e20c; 
+  height: 150px;
+  width: 170px;
+  background: #e20c0c;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px #c40707;
 }
 
 .third {
-    height: 120px;
-    width: 150px;
-    background: #cd7f32;
-    color: #000;
-    border-radius: 10px;
-    box-shadow: 0 12px 40px #cd7f32; 
+  height: 120px;
+  width: 170px;
+  background: #cd7f32;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px #cd7f32;
 }
-
-.place img {
-    width: 80%;
-    height: auto;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-
-.place h2 {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-li {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin: 5px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  li img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 4px;
-  }
-  
-  
-  li strong {
-    font-size: 1rem;
-    margin-right: 10px;
-    color: #fff;
-  }
-  
- 
-  li span {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
- 
-  
